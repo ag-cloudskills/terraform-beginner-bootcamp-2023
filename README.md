@@ -9,3 +9,13 @@ The general format:
 - **MAJOR** version when you make incompatible API changes
 - **MINOR** version when you add functionality in a backward compatible manner
 - **PATCH** version when you make backward compatible bug fixes
+
+### Install the Terraform CLI
+
+[Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+### gitpod lifecycle ( Before, Init, Command)
+
+[gitpod lifecycle](https://www.gitpod.io/docs/configure/workspaces/tasks)
+
+
