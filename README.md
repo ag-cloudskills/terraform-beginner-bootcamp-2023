@@ -18,4 +18,15 @@ The general format:
 
 [gitpod lifecycle](https://www.gitpod.io/docs/configure/workspaces/tasks)
 
+### Working With Envars
+
+- List all the enviornmet avariables using vars and can filter it via grep.
+- Then we can call system defined variable in the bash script.
+- We can define env variable in bash script or we can export varaible in the terminal
+
+#### Persisting Env Vars in GitPod
+
+```
+gp env HELLO='world'
+```
 
