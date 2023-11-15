@@ -30,3 +30,41 @@ The general format:
 gp env HELLO='world'
 ```
 
+### AWS CLI Installation
+
+added bash script for aws cli installation
+
+[AWS CLI Install link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions)
+
+#### Validate AWS Configuration
+
+```sh
+
+aws sts get-caller-identity
+
+```
+
+This command will validate the Aws cloud connection
+
+
+If it is successful , it will give json output
+
+```json
+{
+    "UserId": "AIDAW2HYRG5TXX7JJY72X",
+    "Account": "468672657255",
+    "Arn": "arn:aws:iam::468672657255:user/iamdamin"
+}
+```
+#### Set AWS snv vars
+
+[AWS env vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+Everytime Credentials need to be configure for each gitpod enviornment 
+
+```bash
+gp env export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+gp env export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+gp env export AWS_DEFAULT_REGION=us-west-2
+```
+
+
