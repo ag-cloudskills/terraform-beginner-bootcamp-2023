@@ -59,5 +59,12 @@ If it is successful , it will give json output
 #### Set AWS snv vars
 
 [AWS env vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+Everytime Credentials need to be configure for each gitpod enviornment 
+
+```bash
+gp env export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+gp env export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+gp env export AWS_DEFAULT_REGION=us-west-2
+```
 
 
