@@ -30,3 +30,34 @@ The general format:
 gp env HELLO='world'
 ```
 
+### AWS CLI Installation
+
+added bash script for aws cli installation
+
+[AWS CLI Install link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions)
+
+#### Validate AWS Configuration
+
+```sh
+
+aws sts get-caller-identity
+
+```
+
+This command will validate the Aws cloud connection
+
+
+If it is successful , it will give json output
+
+```json
+{
+    "UserId": "AIDAW2HYRG5TXX7JJY72X",
+    "Account": "468672657255",
+    "Arn": "arn:aws:iam::468672657255:user/iamdamin"
+}
+```
+#### Set AWS snv vars
+
+[AWS env vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+
