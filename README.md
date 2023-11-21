@@ -56,15 +56,15 @@ If it is successful , it will give json output
     "Arn": "arn:aws:iam::468672657255:user/iamdamin"
 }
 ```
-#### Set AWS snv vars
+#### Set AWS env vars
 
 [AWS env vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
 Everytime Credentials need to be configure for each gitpod enviornment 
 
 ```bash
-gp env export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-gp env export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-gp env export AWS_DEFAULT_REGION=us-west-2
+gp env AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+gp env AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+gp env AWS_DEFAULT_REGION=us-west-2
 ```
 
 
