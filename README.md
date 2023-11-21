@@ -80,7 +80,26 @@ gp env AWS_DEFAULT_REGION=us-west-2
 terraform init
 terraform plan
 terraform apply
-terraofrm apply -auto-approve
+terraform apply -auto-approve
 terraform output
+```
+
+### Creating S3 bucket
+
+- Configure aws provider , multiple providers are defined in a single block, here is an example of same
+```tf
+terraform {
+  required_providers {
+    random = {
+      source = "hashicorp/random"
+      version = "3.5.1"
+    }
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.26.0"
+   }
+ }
+}
+
 ```
 
