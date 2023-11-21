@@ -67,4 +67,20 @@ gp env AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 gp env AWS_DEFAULT_REGION=us-west-2
 ```
 
+### Terraform basics
+
+
+- init command is to initate the terraoform and it is run once only
+- plan command is used to preview the changes that will happen and it will help to identify the problems in code
+- apply command is used to build the resources 
+- auto-approve will ensure that resources are build without asking for approval 
+-output command will give the output of the code
+
+```tf
+terraform init
+terraform plan
+terraform apply
+terraofrm apply -auto-approve
+terraform output
+```
 
