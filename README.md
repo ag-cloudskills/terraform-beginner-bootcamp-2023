@@ -102,4 +102,9 @@ terraform {
 }
 
 ```
+### Migrating tf state file in Terraform cloud
 
+- Create the organization and workspace in terraform [cloud](https://app.terraform.io/)
+- [Configure](https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-migrate) the organisation and workspace
+- Generate the [token](https://app.terraform.io/app/settings/tokens?source=terraform-login) and [configure](https://app.terraform.io/app/settings/tokens?source=terraform-login) the token
+- [Initialize] (https://app.terraform.io/app/settings/tokens?source=terraform-login) the credentials 
