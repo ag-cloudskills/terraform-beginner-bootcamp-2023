@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# Path to store credentials.tfrc.json
+tfrc_path="/home/gitpod/.terraform.d/"
+tfrc_file="$tfrc_path/credentials.tfrc.json"
+
+# Get Terraform Cloud token from environment variable
+terraform_token="$TF_CLOUD_TOKEN"
+
+if [ -z "$terraform_token" ]; then
+    echo "Error: TF_CLOUD_TOKEN environment variable is not set."
+    exit 1
+fi
+
+# Check if the directory exists or create it
+if [ ! -d "$tfrc_path" ]; then
+    mkdir -p "$tfrc_path"
+fi
+
+# Check if credentials.tfrc.json file already exists
+if [ -e "$tfrc_file" ]; then
+    echo "$tfrc_file already exists. Skipping file creation."
+else
+    # Create credentials.tfrc.json file
+    cat <<EOF > "$tfrc_file"
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "$terraform_token"
+    }
+  }
+}
+EOF
+
+    if [ -e "$tfrc_file" ]; then
+        echo "credentials.tfrc.json file has been created successfully at $tfrc_file."
+    else
+        echo "Error: Failed to create $tfrc_file."
+        exit 1
+    fi
+fi
