@@ -108,3 +108,19 @@ terraform {
 - [Configure](https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-migrate) the organisation and workspace
 - Generate the [token](https://app.terraform.io/app/settings/tokens?source=terraform-login) and [configure](https://app.terraform.io/app/settings/tokens?source=terraform-login) the token
 - [Initialize] (https://app.terraform.io/app/settings/tokens?source=terraform-login) the credentials 
+
+### Alias added for the terraform 
+
+- tf alias is added for ease of running the command
+- it is important to souce the script in gitpod.yml which ensures that alias 
+  is applicable for the new workspace
+- in the script , it is important that Shebang is configured prpoerly as pert gitpod requirment
+
+```bash
+#!/usr/bin/env bash
+```
+- Also, following command may not work if it is run directly from the script as it requires interactive mode, but gitpod can run it without any issues
+```bash  
+source ~/.bash_profile
+ ```
+
