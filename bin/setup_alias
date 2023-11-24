@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Check if the alias already exists
+if grep -q "alias terra=terraform" ~/.bashrc; then
+    echo "Alias 'terra' for 'terraform' already exists."
+else
+    # Add the alias to the .bashrc file
+    echo "alias terra=terraform" >> ~/.bashrc
+    # Apply the alias for the current session
+    alias terra=terraform
+    echo "Alias 'terra' for 'terraform' has been added."
+    
+fi
+
+source ~/.bash_profile
