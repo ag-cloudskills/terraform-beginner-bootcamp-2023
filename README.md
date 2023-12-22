@@ -10,6 +10,33 @@ The general format:
 - **MINOR** version when you add functionality in a backward compatible manner
 - **PATCH** version when you make backward compatible bug fixes
 
+### Simple Github code update flow
+
+#### Issue
+    - Open Issue and describe the issue
+    - Select Label of the issue : BUG, Documentation , enhancement 
+    - Create new branch on issue after the issue is submitted
+
+#### Branch 
+    - Fix/Update/Add new code in the Branch
+    - Update Doco as needed
+    - commit changes and synch if branch is remote
+    - make sure to include the issue number (#) provided when creating the issue
+
+#### Merge
+    - Validate all work was done in issue page
+    - go to pull requests , create a new pull requests from branch to main
+    - Verfiy diffs 
+    - Add comments from issue in pull request
+    - squash and merge
+
+#### Verify
+    - Verify change is correct in maon
+    - Verify that issue is closed
+    - Add tag as ncessary
+    - Delete Branch if needed
+
+
 ### Install the Terraform CLI
 
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
