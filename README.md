@@ -124,3 +124,14 @@ terraform {
 source ~/.bash_profile
  ```
 
+### Fixing terraform cloud credentials
+
+- check gp environment variable 
+ ```bash
+   gp env
+ 
+ ```  
+- check [token](https://app.terraform.io/app/settings/tokens?source=terraform-login) is not expired, if token is expired , generate the new token and configure it 
+```bash
+gp env TF_CLOUD_TOKEN ='value'
+```
