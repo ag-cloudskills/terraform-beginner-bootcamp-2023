@@ -33,7 +33,7 @@ Given a version number **MAJOR.MINOR.PATCH**, increment the:
 - export can be used set varaible locally 
 - env var  be set globally  by setting in bash profile
 
-#### Persiting env vars in gitpod
+### Persiting env vars in gitpod
 
 - env vars can be persisted in gitpod workspace  (git pod secrets)
 
@@ -44,3 +44,19 @@ gp env HELLO='world'
 - This will ensure env variable is set for all future workspace globally 
 
 - env variable can be also stored in gitpod.yaml for non-sensitive information
+
+
+## AWS CLI Installation
+
+- created new bash script for aws cli installation
+- to check aws identity/credentails configuration
+
+```sh
+aws sts get-caller-identity
+{
+    "UserId": "AIDAQ3EGVS5YQJLMOVXIA",
+    "Account": "124234291239",
+    "Arn": "arn:aws:iam::124234291239:user/iamadmin"
+}
+```
+- export is used to set the the aws access
