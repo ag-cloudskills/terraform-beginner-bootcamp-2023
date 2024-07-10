@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'alias tf="terraform"' >> ~/.bash_profile
+source ~/.bash_profile
+echo "Alias added. Use 'tf' for terraform commands."
