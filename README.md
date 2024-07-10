@@ -69,8 +69,16 @@ aws sts get-caller-identity
 terraform init
 terraform plan
 terraform apply
-
+terraform validate
+terrafrom destroy
 ```
 - init is used for initating the provider
 - plan will indicate what changes will happen
 - apply will implement the changes
+
+### aws provider s3 bucket creation
+
+- configure aws provider
+- all the providers should be present in single block 
+- edit the random provider as per requirement of s3 bucket name
+- configure the [s3](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) resource 
