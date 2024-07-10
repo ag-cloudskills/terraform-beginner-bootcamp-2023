@@ -103,6 +103,12 @@ terraform {
 }
 ```
 
+- In Gitpod dashboard, go to Settings > Variables
+   Add a new variable:
+
+  Name: TF_TOKEN_app_terraform_io
+  Value: Your Terraform Cloud API token
+
 ### set up alias for terraform
 - edit bash profile and create alias
 ```bash
@@ -110,4 +116,3 @@ open ~/.bash_profile
 # add alias tf="terraform"
 source ~/.bash_profile
 - created tfalias script to ensure alias works for every session
-- check workflow
