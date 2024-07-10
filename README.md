@@ -110,3 +110,4 @@ open ~/.bash_profile
 # add alias tf="terraform"
 source ~/.bash_profile
 - created tfalias script to ensure alias works for every session
+- check workflow
