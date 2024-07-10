@@ -60,3 +60,17 @@ aws sts get-caller-identity
 }
 ```
 - export is used to set the the aws access
+
+## Terraform  random module
+- [terraform registry](https://registry.terraform.io/) is for identifying the providers and respective modules
+- [random module](https://registry.terraform.io/providers/hashicorp/random/latest) can be used to test the terraform 
+- following commands are used for implemnation
+```tf
+terraform init
+terraform plan
+terraform apply
+
+```
+- init is used for initating the provider
+- plan will indicate what changes will happen
+- apply will implement the changes
