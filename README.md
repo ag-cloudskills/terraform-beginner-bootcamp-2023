@@ -103,3 +103,10 @@ terraform {
 }
 ```
 
+### set up alias for terraform
+- edit bash profile and create alias
+```bash
+open ~/.bash_profile
+# add alias tf="terraform"
+source ~/.bash_profile
+- created tfalias script to ensure alias works for every session
