@@ -1,4 +1,15 @@
 terraform {
+  cloud {
+    organization = "learnterraformacasual"
+
+    workspaces {
+      name = "tflearn"
+    }
+  }
+}
+
+
+terraform {
   required_providers {
     random = {
       source = "hashicorp/random"
@@ -21,6 +32,8 @@ provider "aws" {
 provider "random" {
   # Configuration options
 }
+
+
 
 resource "random_string" "bucket_name" {
   length           = 16

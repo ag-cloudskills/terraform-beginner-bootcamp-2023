@@ -82,3 +82,24 @@ terrafrom destroy
 - all the providers should be present in single block 
 - edit the random provider as per requirement of s3 bucket name
 - configure the [s3](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) resource 
+
+### terraform gitpod login issue
+- create file manually
+```bash
+touch /home/gitpod/.terraform.d/credentials.tfrc.json
+open /home/gitpod/.terraform.d/credentials.tfrc.json
+```
+- Obtain token from [site](https://app.terraform.io/app/settings/tokens?source=terraform-login)
+- Configure tf file with following code to connect terraform cloud
+```hcl
+terraform {
+  cloud {
+    organization = "<orgname>"
+
+    workspaces {
+      name = "<workspacename>"
+    }
+  }
+}
+```
+
