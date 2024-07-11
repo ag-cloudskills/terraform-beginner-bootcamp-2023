@@ -111,3 +111,7 @@ open ~/.bash_profile
 source ~/.bash_profile
 - created tfalias script to ensure alias works for every session
 - check workflow
+
+##3 fix tf login for AWS
+- configure region in provider
+- configure AWS secret and access key as variable on terraform console
