@@ -103,6 +103,12 @@ terraform {
 }
 ```
 
+- In Gitpod dashboard, go to Settings > Variables
+   Add a new variable:
+
+  Name: TF_TOKEN_app_terraform_io
+  Value: Your Terraform Cloud API token
+
 ### set up alias for terraform
 - edit bash profile and create alias
 ```bash
@@ -110,4 +116,12 @@ open ~/.bash_profile
 # add alias tf="terraform"
 source ~/.bash_profile
 - created tfalias script to ensure alias works for every session
+<<<<<<< HEAD
 - check workflow
+
+##3 fix tf login for AWS
+- configure region in provider
+- configure AWS secret and access key as variable on terraform console
+=======
+>>>>>>> origin/17-fix-terraform-cloud-login
+issue addressed
