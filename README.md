@@ -115,13 +115,11 @@ terraform {
 open ~/.bash_profile
 # add alias tf="terraform"
 source ~/.bash_profile
+```
+
 - created tfalias script to ensure alias works for every session
-<<<<<<< HEAD
 - check workflow
 
 ##3 fix tf login for AWS
 - configure region in provider
 - configure AWS secret and access key as variable on terraform console
-=======
->>>>>>> origin/17-fix-terraform-cloud-login
-issue addressed
