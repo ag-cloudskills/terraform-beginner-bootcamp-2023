@@ -124,3 +124,4 @@ source ~/.bash_profile
 - configure AWS secret and access key as variable on terraform console
 =======
 >>>>>>> origin/17-fix-terraform-cloud-login
+issue addressed
